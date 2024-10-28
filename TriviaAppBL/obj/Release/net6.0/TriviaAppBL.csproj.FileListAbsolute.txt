@@ -1,0 +1,12 @@
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\bin\Release\net6.0\TriviaAppBL.deps.json
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\bin\Release\net6.0\TriviaAppBL.dll
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\bin\Release\net6.0\TriviaAppBL.pdb
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\TriviaAppBL.csproj.AssemblyReference.cache
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\TriviaAppBL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\TriviaAppBL.AssemblyInfoInputs.cache
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\TriviaAppBL.AssemblyInfo.cs
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\TriviaAppBL.csproj.CoreCompileInputs.cache
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\TriviaAppBL.dll
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\refint\TriviaAppBL.dll
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\TriviaAppBL.pdb
+D:\Practica_CSharp\TriviaAppBackend\TriviaAppBL\obj\Release\net6.0\ref\TriviaAppBL.dll

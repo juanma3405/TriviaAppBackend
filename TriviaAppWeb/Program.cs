@@ -3,19 +3,22 @@ using TriviaAppInfrastructure.ExternalServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var environment = builder.Environment.EnvironmentName;
+var allowedOrigin = environment == "Development"
+    ? builder.Configuration["AllowedOrigins:Local"]
+    : builder.Configuration["AllowedOrigins:Production"];
 
+
+// Add services to the container.
 builder.Services.AddControllers();
-//builder.Services.AddHttpClient();
 
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:3000")
-        .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials();
+        builder.WithOrigins(allowedOrigin)
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
 });
 
@@ -33,6 +36,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//para hosting en produccion
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors();
 
