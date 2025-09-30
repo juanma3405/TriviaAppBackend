@@ -1,7 +1,11 @@
+using Microsoft.AspNetCore.HttpOverrides;
 using TriviaAppBL.Interfaces;
 using TriviaAppInfrastructure.ExternalServices;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://*:{port}");
 
 var environment = builder.Environment.EnvironmentName;
 var allowedOrigin = environment == "Development"
@@ -27,8 +31,12 @@ builder.Services.AddHttpClient<IServicio_APITrivia, Servicio_APITrivia>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 var app = builder.Build();
+
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
