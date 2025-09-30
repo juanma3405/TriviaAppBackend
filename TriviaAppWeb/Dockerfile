@@ -2,13 +2,15 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-COPY ["TriviaAppWeb/", "TriviaAppWeb/"]
-COPY ["TriviaAppBL/", "TriviaAppBL/"]
-COPY ["TriviaAppInfrastructure/", "TriviaAppInfrastructure/"]
+COPY TriviaAppWeb/TriviaBackend.csproj ./TriviaAppWeb/
+COPY TriviaBackend.sln .
 
-COPY *.sln .
+COPY TriviaAppBL/ ./TriviaAppBL/
+COPY TriviaAppInfrastructure/ ./TriviaAppInfrastructure/
 
 RUN dotnet restore
+
+COPY TriviaAppWeb/ ./TriviaAppWeb/
 
 RUN dotnet publish TriviaAppWeb/TriviaBackend.csproj -c Release -o /app --no-restore
 

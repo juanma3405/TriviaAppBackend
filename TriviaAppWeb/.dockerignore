@@ -1,9 +1,13 @@
+.vs
 **/bin
 **/obj
-.git
-.gitignore
+
 .vscode
 *.user
 *.suo
+**/Properties/launchSettings.json
+
+.git
+.gitignore
 Dockerfile
 docker-compose.yml
