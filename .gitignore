@@ -1,0 +1,10 @@
+[Bb]in/
+[Oo]bj/
+
+/.config/
+
+[Oo]ut/                 
+/publish/
+/.vs/                 
+*.user
+*.suo
