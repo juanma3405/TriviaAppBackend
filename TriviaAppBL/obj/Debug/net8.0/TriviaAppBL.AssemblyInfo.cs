@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TriviaBackend")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("TriviaAppBL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95a77de3216e1eed1f833a921ea872148f53981d")]
-[assembly: System.Reflection.AssemblyProductAttribute("TriviaBackend")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TriviaBackend")]
+[assembly: System.Reflection.AssemblyProductAttribute("TriviaAppBL")]
+[assembly: System.Reflection.AssemblyTitleAttribute("TriviaAppBL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
