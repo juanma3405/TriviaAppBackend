@@ -4,8 +4,8 @@ WORKDIR /src
 
 COPY . .
 
-RUN dotnet restore ./TriviaAppWeb/TriviaAppWeb.csproj
-RUN dotnet publish  ./TriviaAppWeb/TriviaAppWeb.csproj -c Release -o /app
+RUN dotnet restore ./TriviaBackend/TriviaBackend.csproj
+RUN dotnet publish  ./TriviaBackend/TriviaBackend.csproj -c Release -o /app
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
