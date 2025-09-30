@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "TriviaBackend.Controllers.TriviaController",
+    "Method": "GetCategories",
+    "RelativePath": "api/trivia/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TriviaBackend.Controllers.TriviaController",
+    "Method": "GetQuestions",
+    "RelativePath": "api/trivia/questions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "config",
+        "Type": "TriviaAppBL.Models.TriviaConfig",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

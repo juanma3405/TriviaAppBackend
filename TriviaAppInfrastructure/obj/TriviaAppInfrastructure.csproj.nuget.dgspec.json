@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj": {}
+    "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj": {
+    "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj",
+        "projectUniqueName": "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj",
         "projectName": "TriviaAppBL",
-        "projectPath": "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj",
+        "projectPath": "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj",
         "packagesPath": "C:\\Users\\juanm\\.nuget\\packages\\",
-        "outputPath": "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\obj\\",
+        "outputPath": "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\juanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -59,29 +66,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj": {
+    "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj",
+        "projectUniqueName": "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj",
         "projectName": "TriviaAppInfrastructure",
-        "projectPath": "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj",
+        "projectPath": "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\TriviaAppInfrastructure.csproj",
         "packagesPath": "C:\\Users\\juanm\\.nuget\\packages\\",
-        "outputPath": "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\obj\\",
+        "outputPath": "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppInfrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\juanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +117,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj": {
-                "projectPath": "D:\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj"
+              "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj": {
+                "projectPath": "C:\\Trabajo\\Practica_CSharp\\TriviaAppBackend\\TriviaAppBL\\TriviaAppBL.csproj"
               }
             }
           }
@@ -105,7 +127,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -127,12 +155,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
