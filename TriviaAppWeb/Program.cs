@@ -4,8 +4,11 @@ using TriviaAppInfrastructure.ExternalServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-builder.WebHost.UseUrls($"http://*:{port}");
+if (!builder.Environment.IsDevelopment())
+{
+    var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+    builder.WebHost.UseUrls($"http://*:{port}");
+}
 
 var environment = builder.Environment.EnvironmentName;
 var allowedOrigin = environment == "Development"
@@ -13,7 +16,6 @@ var allowedOrigin = environment == "Development"
     : builder.Configuration["AllowedOrigins:Production"];
 
 
-// Add services to the container.
 builder.Services.AddControllers();
 
 builder.Services.AddCors(options =>
@@ -49,16 +51,11 @@ app.Use(async (context, next) =>
 });
 
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-//para hosting en produccion
-app.UseSwagger();
-app.UseSwaggerUI();
 
 app.UseCors();
 
